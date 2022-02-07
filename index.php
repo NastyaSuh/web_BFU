@@ -97,7 +97,7 @@ foreach ($arr2 as $num)
 
 $number = 30;
 $del = [];
-for($i = 0; $i < $number; $i ++)
+for($i = 1; $i < $number + 1; $i ++)
 {
 	if($number % $i == 0)
 	{
@@ -127,4 +127,50 @@ function printStringReturnNumber(): int
 }
 $my_num = printStringReturnNumber();
 echo $my_num . "\n";
+//endregion
+
+//region task8: Functions
+function increaseEnthusiasm(string $str) : string
+{
+	return $str . "!";
+}
+echo increaseEnthusiasm("string");
+
+function repeatThreeTimes(string $str): string
+{
+	return str_repeat($str, 3);
+}
+echo repeatThreeTimes("string1");
+echo increaseEnthusiasm(repeatThreeTimes("string2"));
+
+function cut(string $str, int $length = 10): string
+{
+	return substr($str, 0, $length);
+}
+echo cut("Lorem ipsum dolor sit amet.");
+
+function recursivePrint(array $array, int $i = 0): void
+{
+	echo $array[$i] . "\n";
+	if ($i === sizeof($array))
+	{
+		return;
+	}
+	recursivePrint($array, $i + 1);
+}
+
+function recursiveSum(int $num): int
+{
+	$result = 0;
+	while($num > 0)
+	{
+		$result += $num % 10;
+		$num /= 10;
+	}
+	if($result > 9)
+	{
+		recursiveSum($result);
+	}
+	return $result;
+}
 //endregion
