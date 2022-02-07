@@ -11,7 +11,7 @@ $digit = 5;
 echo $digit . "\n";
 
 $float_digit = 273.5;
-echo "float digit = " . $float_digit. "\n";
+echo "float digit = " . $float_digit . "\n";
 
 echo 12 . "\n";
 
@@ -173,4 +173,69 @@ function recursiveSum(int $num): int
 	}
 	return $result;
 }
+//endregion
+
+//region task9: Arrays
+function fillArray(int $num): array
+{
+	$arr = [];
+	for ($i = 0; $i < $num; $i ++)
+	{
+		$str = str_repeat("x", $i);
+		array_push($arr, $str);
+	}
+	return $arr;
+}
+function arrayFill(string $char, int $size): array
+{
+	$arr = [];
+	for($i = 0; $i < $size; $i++)
+	{
+		array_push($arr, $char);
+	}
+	return $arr;
+}
+
+$arr4 = [[1,2,3],[4,5],[6]];
+$result = 0;
+foreach ($arr4 as $value)
+{
+	foreach ($value as $num)
+	{
+		$result += $num;
+	}
+}
+
+$arr5 = [2, 5, 3, 9];
+$sum1 = 0;
+for ($i = 0; $i < sizeof($arr5); $i++)
+{
+	$sum1 += $arr5[$i] * $arr5[$i + 1];
+}
+
+$user = [
+	'name' => "Nastya",
+	'surname' => "Susha",
+	'patronymic' => "Viktorovna"
+];
+foreach ($user as $key => $value)
+{
+	echo $value . ' ';
+}
+
+$date = [
+	'day' => 7,
+	'month' => 'february',
+	'year' => 2022
+];
+foreach ($date as $key => $value)
+{
+	echo $value . "-";
+}
+echo "\n";
+
+$arr6 = ['a', 'b', 'c', 'd', 'e'];
+echo sizeof($arr6) . '       ';
+echo $arr6[sizeof($arr6) - 1] . '            ';
+echo $arr6[sizeof($arr6) - 2] . '            ';
 //endregion
