@@ -117,4 +117,14 @@ for($i = 0; $i < sizeof($arr3); $i++)
 		break;
 	}
 }
-// endregion
+//endregion
+
+//region task7: Functions
+function printStringReturnNumber(): int
+{
+	echo "some string" . "\n";
+	return 10;
+}
+$my_num = printStringReturnNumber();
+echo $my_num . "\n";
+//endregion
