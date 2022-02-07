@@ -299,3 +299,16 @@ function sumArray(array $arr): int
 }
 echo sumArray([4, 5, 5, 7]);
 //endregion
+
+//region task11: Loops
+function buildPyramid(int $size): string
+{
+	$str = '';
+	for ($i = 0; $i < $size; $i++)
+	{
+		$str .= str_repeat("x", $i + 1) . "\n";
+	}
+	return $str;
+}
+echo buildPyramid(20);
+//endregion
