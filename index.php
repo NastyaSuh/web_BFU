@@ -235,7 +235,9 @@ foreach ($date as $key => $value)
 echo "\n";
 
 $arr6 = ['a', 'b', 'c', 'd', 'e'];
-echo sizeof($arr6) . '       ';
-echo $arr6[sizeof($arr6) - 1] . '            ';
-echo $arr6[sizeof($arr6) - 2] . '            ';
+echo sizeof($arr6) . "\n";
+echo $arr6[sizeof($arr6) - 1] . "\n";
+echo $arr6[sizeof($arr6) - 2] . "\n";
 //endregion
+
+//
