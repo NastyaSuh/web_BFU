@@ -240,4 +240,62 @@ echo $arr6[sizeof($arr6) - 1] . "\n";
 echo $arr6[sizeof($arr6) - 2] . "\n";
 //endregion
 
-//
+//region task10: If//Else
+function sum(int $num1, int $num2): bool
+{
+	if($num1 + $num2 > 10)
+	{
+		return true;
+	}
+	return false;
+}
+
+function equal(int $num1, int $num2): bool
+{
+	if($num1 == $num2)
+	{
+		return true;
+	}
+	return false;
+}
+
+function test(int $num1): string
+{
+	if(!$num1)
+	{
+		return "Верно";
+	}
+	return "Неверно";
+}
+
+function testAge(int $age): string
+{
+	if($age < 10 || $age > 99)
+	{
+		return "Число не попадает в диапазон";
+	}
+	else
+	{
+		$sum = recursiveSum($age);
+		return $sum . "\n";
+	}
+}
+
+function sumArray(array $arr): int
+{
+	if(sizeof($arr) <= 3)
+	{
+		return -1;
+	}
+	else
+	{
+		$sum = 0;
+		foreach ($arr as $num)
+		{
+			$sum += $num;
+		}
+		return $sum;
+	}
+}
+echo sumArray([4, 5, 5, 7]);
+//endregion
