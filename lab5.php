@@ -50,7 +50,7 @@ $config = [
 
 </style>
 
-<form action="lab5.php" method="post" style=" >
+<form action="lab5.php" method="post" >
 	<label for="email">Email
 		<input type="email" name="email">
 	</label>
