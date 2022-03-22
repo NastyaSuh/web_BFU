@@ -41,10 +41,10 @@ if (!empty($_POST["email"]) and !empty($_POST["category"]) and !empty($_POST["he
 		<input type="email" name="email"><br>
 		Category<br>
 		<select name="category" required>
-			<option>Electronics</option>
-			<option>Pets</option>
-			<option>House and garden</option>
-			<option>Fashion</option>
+			<option value="Sport">Sport</option>
+			<option value="Auto">Auto</option>
+			<option value="House">House-holding</option>
+			<option value="Uni">Uni and school stuff</option>
 		</select><br>
 		Headline<br>
 		<input type="text" name="headline"><br>
