@@ -1,0 +1,17 @@
+.form {
+	display: table-caption;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;
+}
+
+.caption {
+	margin-bottom: 10px;
+}
+
+.table, td {
+	margin-top: 20px;
+	border: 0.75px solid black;
+	padding: 3px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
