@@ -1,4 +1,5 @@
 <?php
+/** @var array $config */
 require_once 'config.php';
 require_once 'database_functions.php';
 require_once 'helpers_functions.php';
@@ -6,15 +7,6 @@ require_once 'helpers_functions.php';
 $dbConnection = connectToDatabase();
 $messageBoardCategories = getCategory($dbConnection);
 $messageBoardItems = getItems($dbConnection);
-
-$config = [
-	'tableHeaders' => [
-		'email' => 'Электронная почта',
-		'category' => 'Категория объявления',
-		'title' => 'Заголовок объявления',
-		'description' => 'Текст объявления'
-	]
-];
 
 ?>
 

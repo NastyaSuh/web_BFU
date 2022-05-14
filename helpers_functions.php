@@ -1,6 +1,5 @@
 <?php
 
-
 function buildTask(array $taskData): array
 {
 	return [
